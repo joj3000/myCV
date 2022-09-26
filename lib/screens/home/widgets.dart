@@ -1,0 +1,63 @@
+import '../../libs.dart';
+
+/// Skill + dots
+class SkillRow extends StatelessWidget {
+  final Skill skill;
+  final double? titleWidth;
+  final bool isRightPart;
+  const SkillRow(this.skill,
+      {super.key, this.titleWidth = 70, this.isRightPart = true});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          width: titleWidth,
+          child: AutoSizeText(
+            skill.name.toUpperCase(),
+            minFontSize: 4,
+            maxLines: 1,
+            style: TxtStyles.profileLanguageText(context),
+          ),
+        ),
+        const SizedBox(width: 15),
+        dotMark(context, skill.mark, isRightPart)
+      ],
+    );
+  }
+
+  Widget dotMark(BuildContext context, int mark, bool isRightPartDot,
+      {int max = 5}) {
+    mark = mark < 0
+        ? 0
+        : mark > max
+            ? max
+            : mark;
+    return Row(
+      children: List.generate(
+        max,
+        (index) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 3),
+          child: CircleAvatar(
+              radius: 4.5,
+              backgroundColor:
+                  getDotColor(context, index + 1 <= mark, isRightPartDot)),
+        ),
+      ),
+    );
+  }
+
+  Color? getDotColor(BuildContext context, bool isActive, bool isRightPart) {
+    if (isRightPart) {
+      return isActive
+          ? ext(context).rightPartDotActive
+          : ext(context).rightPartDotInactive;
+    } else {
+      return isActive
+          ? ext(context).ribbonDotActive
+          : ext(context).ribbonDotInactive;
+    }
+  }
+}
