@@ -10,6 +10,7 @@ class MyConst {
   static const double a4Format = 29.7 / 21;
   static const double maxCvWidth = 800;
   static const double maxCvHeight = maxCvWidth * a4Format;
+  static const double profilePictureRadius = 60;
 
   /// Colors
   static const Color bgColor = Color.fromARGB(245, 255, 255, 255);
@@ -18,9 +19,9 @@ class MyConst {
 List<Info> myInfos = const [
   Info(Txt.myInfos, Icons.info),
   Info(Txt.myPlace, Icons.location_on),
-  Info(Txt.myEmail, Icons.email, selectable: true),
-  Info(Txt.myGithub, Img.github),
-  Info(Txt.myWebsite, Icons.language),
+  Info(Txt.myEmail, Icons.email, type: InfoType.email),
+  Info(Txt.myGithub, FontAwesomeIcons.github, type: InfoType.github),
+  Info(Txt.myWebsite, Icons.language, type: InfoType.website),
 ];
 
 List<EdXpInfos> educ = [
@@ -81,8 +82,8 @@ List<Skill> mySkills = const [
 ];
 
 List<Skill> myLanguages = const [
-  Skill(Txt.english, 5),
   Skill(Txt.french, 5),
+  Skill(Txt.english, 5),
   Skill(Txt.spanish, 2),
 ];
 

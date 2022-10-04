@@ -14,11 +14,7 @@ class ModeSwitcher extends ChangeNotifier {
   bool get isNightMode => _isNightMode;
 
   void switchTheme() {
-    /// "difference" is used to prevent infinite switching back and forth that would happen when clicking fast on the switch
-    if (DateTime.now().difference(lastSwitched).inMilliseconds > 600) {
-      lastSwitched = DateTime.now();
-      _isNightMode = !_isNightMode;
-      notifyListeners();
-    }
+    _isNightMode = !_isNightMode;
+    notifyListeners();
   }
 }

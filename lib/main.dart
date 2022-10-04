@@ -15,11 +15,11 @@ class MyCV extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final bool mode = ref.watch(changeThemeProvider).isNightMode;
     return MaterialApp(
-      title: 'My CV App',
+      title: 'Hey, I\'m Joran',
       darkTheme: MyThemes.dark,
       themeMode: ThemeMode.light,
       theme: mode ? MyThemes.dark : MyThemes.light,
-      home: const HomePage(),
+      home: const Home(),
     );
   }
 }

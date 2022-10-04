@@ -23,7 +23,7 @@ class TxtStyles {
 
   /// profile text
   static TextStyle profileText(ctx) => TextStyle(
-      fontSize: 12, fontWeight: FontWeight.normal, color: ext(ctx).ribbonText);
+      fontSize: 12, fontWeight: FontWeight.w500, color: ext(ctx).ribbonText);
 
   /// profile language text
   static TextStyle profileLanguageText(ctx) => TextStyle(

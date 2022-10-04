@@ -17,10 +17,10 @@ class MyThemes {
         circleAvatar: Color(0xffEEC0C0),
         ribbonDotActive: Color(0xff47464b),
         ribbonDotInactive: Colors.white,
-        // ribbonDotInactive: Color.fromARGB(255, 239, 239, 239),
         rightPartDotActive: Color(0xff47464b),
         rightPartDotInactive: Color.fromARGB(255, 224, 224, 224),
         divider: Color(0xff47464b),
+        themeSwitchIcon: Colors.white,
       )
     ],
   );
@@ -29,24 +29,20 @@ class MyThemes {
     fontFamily: 'Poppins',
     extensions: const [
       MyColors(
-        // background: Color(0xff282A36),
-        // ribbonBackground: Color(0xff5a6893),
         background: Color(0xff5a6893),
         ribbonBackground: Color(0xff282A36),
         text: Colors.white,
         title: Color(0xff282A36),
-
-        // ribbonBackground: Color(0xff1C1E21),
         ribbonBloc: Color(0xff5a6893),
         ribbonBlocTitle: Colors.white,
         ribbonText: Colors.white,
         circleAvatar: Color(0xff282A36),
         ribbonDotInactive: Color(0xff5a6893),
         ribbonDotActive: Color.fromARGB(255, 246, 246, 246),
-        // ribbonDotActive: Color.fromARGB(255, 239, 239, 239),
         rightPartDotInactive: Color(0xff282A36),
         rightPartDotActive: Color.fromARGB(255, 246, 246, 246),
         divider: Color(0xff282A36),
+        themeSwitchIcon: Colors.white,
       ),
     ],
   );
@@ -68,6 +64,7 @@ class MyColors extends ThemeExtension<MyColors> {
     required this.rightPartDotActive,
     required this.rightPartDotInactive,
     required this.divider,
+    required this.themeSwitchIcon,
   });
 
   final Color? background;
@@ -83,6 +80,7 @@ class MyColors extends ThemeExtension<MyColors> {
   final Color? rightPartDotActive;
   final Color? rightPartDotInactive;
   final Color? divider;
+  final Color? themeSwitchIcon;
 
   @override
   MyColors copyWith({
@@ -99,6 +97,7 @@ class MyColors extends ThemeExtension<MyColors> {
     Color? rightPartDotActive,
     Color? rightPartDotInactive,
     Color? divider,
+    Color? themeSwitchIcon,
   }) {
     return MyColors(
       background: background ?? this.background,
@@ -114,6 +113,7 @@ class MyColors extends ThemeExtension<MyColors> {
       rightPartDotActive: rightPartDotActive ?? this.rightPartDotActive,
       rightPartDotInactive: rightPartDotInactive ?? this.rightPartDotInactive,
       divider: divider ?? this.divider,
+      themeSwitchIcon: themeSwitchIcon ?? this.themeSwitchIcon,
     );
   }
 
@@ -139,6 +139,7 @@ class MyColors extends ThemeExtension<MyColors> {
       rightPartDotInactive:
           Color.lerp(rightPartDotInactive, other.rightPartDotInactive, t),
       divider: Color.lerp(divider, other.divider, t),
+      themeSwitchIcon: Color.lerp(themeSwitchIcon, other.themeSwitchIcon, t),
     );
   }
 }

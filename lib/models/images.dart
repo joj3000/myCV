@@ -1,7 +1,4 @@
 class Img {
-  /// IMAGES
-  static const String profile = 'images/profile.jpg';
-
-  /// SVG
-  static const String github = 'images/github.svg';
+  static const String profile = 'assets/images/profile.jpg';
+  static const String myCV = 'assets/images/myCV.png';
 }

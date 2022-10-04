@@ -2,15 +2,15 @@ import '../libs.dart';
 import 'dart:ui' as ui;
 
 /* 
-  The purpose of the below widget MySizer is to rebuild its child only when the current width
-  of the window crosses a few steps (defined in the PlatformSize enum). 
+  The purpose of the below widget MySizer is to rebuild its childs only when the current width
+  of the window crosses the defined steps (defined in the PlatformSize enum). 
   This MySizer widget is supposed to be put (almost) at top of the widget tree.
 */
 
 /// platform size (upper) steps
 enum PlatformSize {
   mobile(480),
-  tablet(900),
+  tablet(600),
   web(1100);
 
   final int width;
@@ -58,8 +58,15 @@ class SizeNotifier extends ChangeNotifier {
 
 /// Changes the PlatformSize value according to the window's width.
 class MySizer extends ConsumerStatefulWidget {
-  final Widget child;
-  const MySizer({Key? key, required this.child}) : super(key: key);
+  final Widget webChild;
+  final Widget tabletChild;
+  final Widget mobileChild;
+  const MySizer({
+    Key? key,
+    required this.webChild,
+    required this.tabletChild,
+    required this.mobileChild,
+  }) : super(key: key);
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _MySizerState();
@@ -90,6 +97,14 @@ class _MySizerState extends ConsumerState<MySizer> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return widget.child;
+    final platform = ref.watch(platformSizeProvider).platform;
+    switch (platform) {
+      case PlatformSize.mobile:
+        return widget.mobileChild;
+      case PlatformSize.tablet:
+        return widget.tabletChild;
+      default:
+        return widget.webChild;
+    }
   }
 }
