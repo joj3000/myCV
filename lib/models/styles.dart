@@ -21,35 +21,35 @@ class TxtStyles {
   static const TextStyle titleBloc =
       TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.white);
 
-  /// profile text
+  /// Profile text
   static TextStyle profileText(ctx) => TextStyle(
       fontSize: 12, fontWeight: FontWeight.w500, color: ext(ctx).ribbonText);
 
-  /// profile language text
+  /// Profile language text
   static TextStyle profileLanguageText(ctx) => TextStyle(
       fontSize: 13, fontWeight: FontWeight.w500, color: ext(ctx).ribbonText);
 
-  /// right part
+  /// Right part
   static TextStyle rightPartTitle(ctx) => TextStyle(
       fontSize: 18, fontWeight: FontWeight.bold, color: ext(ctx).title);
 
-  /// about me txt
+  /// About me txt
   static TextStyle aboutMeTextStyle(ctx) => TextStyle(
       fontSize: 13.5, fontWeight: FontWeight.w500, color: ext(ctx).text);
 
-  /// subtitle
+  /// Subtitle
   static TextStyle subtitle(ctx) => TextStyle(
       fontSize: 14, fontWeight: FontWeight.w700, color: ext(ctx).text);
 
-  /// subtitle text
+  /// Subtitle text
   static TextStyle subtitleText(ctx) => TextStyle(
       fontSize: 13, fontWeight: FontWeight.w500, color: ext(ctx).text);
 
-  /// subtitle date
+  /// Subtitle date
   static TextStyle subtitleDate(ctx) => TextStyle(
       fontSize: 11, fontWeight: FontWeight.w300, color: ext(ctx).text);
 
-  /// hobby text
+  /// Hobby text
   static TextStyle hobbyTxt(ctx) => TextStyle(
       fontSize: 13, fontWeight: FontWeight.w500, color: ext(ctx).ribbonText);
 }

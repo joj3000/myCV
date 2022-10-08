@@ -12,14 +12,8 @@ class MyFunctions {
         break;
       case InfoType.github:
         MyUrl.launchMyUrl(context, url: Txt.githubUrl);
-        // MySnacks.showSnack(context, Txt.myEmail, 250);
         break;
       default:
     }
-    // if (info.type.contains('www.')) {
-    //   MySnacks.showSnack(context, Txt.alreadyThere, 250);
-    // } else {
-    //   MyUrl.launchMyUrl(context, url: Txt.githubUrl);
-    // }
   }
 }

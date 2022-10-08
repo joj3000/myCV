@@ -11,6 +11,7 @@ class MyConst {
   static const double maxCvWidth = 800;
   static const double maxCvHeight = maxCvWidth * a4Format;
   static const double profilePictureRadius = 60;
+  static const double profilePictureRadiusMobile = 70;
 
   /// Colors
   static const Color bgColor = Color.fromARGB(245, 255, 255, 255);

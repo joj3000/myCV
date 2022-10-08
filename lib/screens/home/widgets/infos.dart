@@ -22,17 +22,11 @@ class Infos extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             if (info.icon is FontAwesomeIcons)
-              // SvgPicture.asset(
               FaIcon(
                 FontAwesomeIcons.github,
                 color: ext(context).ribbonText,
                 size: MyConst.profileIconSize,
               ),
-
-            // )
-            // Image.asset(info.icon,
-            //     color: ext(context).ribbonText,
-            //     width: MyConst.profileIconSize),
             if (info.icon is! String)
               Icon(
                 info.icon,
@@ -45,21 +39,9 @@ class Infos extends StatelessWidget {
                   ? SystemMouseCursors.click
                   : SystemMouseCursors.basic,
               child: GestureDetector(
-                onTap:
-                    // () {
-                    //   if (info.text.contains('www.')) {
-                    //     print('hooi');
-                    //     await MySnacks.showSnack(context, Txt.alreadyThere, 250);
-                    //   } else {
-                    //     print('hooi2');
-
-                    //     MyUrl.launchMyUrl(context, url: Txt.githubUrl);
-                    //   }
-                    // },
-
-                    info.type != InfoType.none
-                        ? () => MyFunctions.clickable(context, info)
-                        : null,
+                onTap: info.type != InfoType.none
+                    ? () => MyFunctions.clickable(context, info)
+                    : null,
                 child: Text(
                   info.text,
                   style: TxtStyles.profileText(context),

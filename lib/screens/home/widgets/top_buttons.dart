@@ -50,9 +50,7 @@ class TopButtons extends ConsumerWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () async {
-          DL.downloadCV(context);
-        },
+        onTap: () => DL.downloadCV(context),
         child: Container(
           height: isMobile ? 40 : 30,
           width: isMobile ? 40 : 30,

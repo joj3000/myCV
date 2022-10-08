@@ -18,6 +18,4 @@ class MyUrl {
       MySnacks.showSnack(context, Txt.errorOccured, 200);
     }
   }
-
-  // await launchUrl(Uri.parse("mailto:email?subject=subject&body=body"))
 }
