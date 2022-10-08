@@ -1,3 +1,3 @@
 # My interactive CV
 
-Hello I'm Joran, here is the code for my CV Web App, and you can find the link here [http://www.heyimjoran.com](http://www.heyimjoran.com)
+Hello I'm Joran ! This repo contains the code of my Web App résumé, and you can visit the latter here : [http://www.heyimjoran.com](http://www.heyimjoran.com)
