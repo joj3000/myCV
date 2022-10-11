@@ -12,11 +12,15 @@ class TopProfile extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 50),
-          CircleAvatar(
-            radius: !isMobile
-                ? MyConst.profilePictureRadius
-                : MyConst.profilePictureRadiusMobile,
-            backgroundImage: const AssetImage(Img.profile),
+          ClipOval(
+            child: FadeInImage.assetNetwork(
+              fadeInDuration: MyConst.profileFadeIn,
+              image: Img.profile,
+              placeholder: Img.transparentProfile,
+              height: !isMobile
+                  ? MyConst.profilePictureRadius
+                  : MyConst.profilePictureRadiusMobile,
+            ),
           ),
           const SizedBox(height: 15),
           Text(Txt.firstName, style: TxtStyles.firstName(context)),

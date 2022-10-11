@@ -10,11 +10,14 @@ class MyConst {
   static const double a4Format = 29.7 / 21;
   static const double maxCvWidth = 800;
   static const double maxCvHeight = maxCvWidth * a4Format;
-  static const double profilePictureRadius = 60;
-  static const double profilePictureRadiusMobile = 70;
+  static const double profilePictureRadius = 120;
+  static const double profilePictureRadiusMobile = 140;
 
   /// Colors
   static const Color bgColor = Color.fromARGB(245, 255, 255, 255);
+
+  /// Duration
+  static const Duration profileFadeIn = Duration(milliseconds: 50);
 }
 
 List<Info> myInfos = const [
