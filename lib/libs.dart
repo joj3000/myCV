@@ -25,7 +25,6 @@ export 'models/extensions.dart';
 export 'tools/lists.dart';
 export 'tools/snackbars.dart';
 export 'tools/launch_url.dart';
-export 'tools/load_img.dart';
 
 export 'platform/web.dart';
 export 'platform/mobile.dart';
