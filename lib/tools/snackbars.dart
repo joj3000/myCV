@@ -3,6 +3,7 @@ import '../libs.dart';
 class MySnacks {
   static showSnack(BuildContext context, String txt, double width,
       {Color? color}) {
+    MyAnalytics.websiteClicked();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Align(

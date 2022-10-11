@@ -23,6 +23,7 @@ dependencies:
   url_launcher: ^6.1.5
   font_awesome_flutter: ^10.2.1
   image_downloader_web: ^1.0.2
+  firebase_analytics: ^9.3.8
 
 dev_dependencies:
   flutter_test:

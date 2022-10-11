@@ -6,6 +6,7 @@ import '../libs.dart';
 
 class DL {
   static Future<void> downloadCV(BuildContext context) async {
+    MyAnalytics.downloadClicked();
     try {
       final ByteData byteData = await rootBundle.load(Img.myCV);
       final Uint8List uint8list = byteData.buffer.asUint8List();

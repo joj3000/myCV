@@ -14,6 +14,7 @@ class ModeSwitcher extends ChangeNotifier {
   bool get isNightMode => _isNightMode;
 
   void switchTheme() {
+    MyAnalytics.themeClicked();
     _isNightMode = !_isNightMode;
     notifyListeners();
   }
