@@ -1,5 +1,5 @@
 name: my_cv
-description: A new Flutter project.
+description: Hey, I'm Joran.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -17,8 +17,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_riverpod: ^1.0.4
   firebase_core: ^1.22.0
-  firebase_auth: ^3.9.0
-  cloud_firestore: ^3.4.8
   auto_size_text: ^3.0.0
   url_launcher: ^6.1.5
   font_awesome_flutter: ^10.2.1

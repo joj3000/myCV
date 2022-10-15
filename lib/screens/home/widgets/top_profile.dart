@@ -13,15 +13,12 @@ class TopProfile extends StatelessWidget {
         children: [
           const SizedBox(height: 50),
           ClipOval(
-            child: FadeInImage.assetNetwork(
-              fadeInDuration: MyConst.profileFadeIn,
-              image: Img.profile,
-              placeholder: Img.transparentProfile,
-              height: !isMobile
-                  ? MyConst.profilePictureRadius
-                  : MyConst.profilePictureRadiusMobile,
-            ),
-          ),
+              child: Image.asset(
+            Img.profile,
+            height: !isMobile
+                ? MyConst.profilePictureRadius
+                : MyConst.profilePictureRadiusMobile,
+          )),
           const SizedBox(height: 15),
           Text(Txt.firstName, style: TxtStyles.firstName(context)),
           Text(Txt.lastName, style: TxtStyles.lastName(context)),

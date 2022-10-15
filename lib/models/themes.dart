@@ -1,5 +1,3 @@
-// ignore_for_file: unnecessary_this
-
 import '../libs.dart';
 
 class MyThemes {
@@ -88,6 +86,7 @@ class MyColors extends ThemeExtension<MyColors> {
     Color? text,
     Color? title,
     Color? ribbonBackground,
+    Color? ribbonBloc,
     Color? titleBloc,
     Color? ribbonBlocTitle,
     Color? ribbonText,
