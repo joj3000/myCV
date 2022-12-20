@@ -32,7 +32,7 @@ class SkillRow extends StatelessWidget {
           //   style: TxtStyles.profileLanguageText(context),
           // ),
           child: Text(
-            skill.name.toUpperCase(),
+            skill.name.tr().toUpperCase(),
             maxLines: 1,
             style: fontSize != null
                 ? TxtStyles.profileLanguageText(context)

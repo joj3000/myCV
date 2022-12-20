@@ -38,8 +38,8 @@ class MobileVersion extends StatelessWidget {
   Widget skills1() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Expanded(child: Infos()),
+      children: const [
+        Expanded(child: Infos()),
         Expanded(
           child: Skills(Txt.languages, myLanguages, isMobile: true),
         ),
@@ -50,7 +50,7 @@ class MobileVersion extends StatelessWidget {
   Widget skills2() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: const [
         Expanded(
           child: Skills(
             Txt.otherSkills,
@@ -59,8 +59,8 @@ class MobileVersion extends StatelessWidget {
             fontSize: 11,
           ),
         ),
-        const Expanded(
-          child: Hobbies(isMobile: true),
+        Expanded(
+          child: TxtInfos(Txt.hobbies, myHobbies, isMobile: true),
         ),
       ],
     );

@@ -7,7 +7,7 @@ class MyUrl {
     try {
       await launchUrl(Uri.parse(url));
     } catch (e) {
-      MySnacks.showSnack(context, Txt.errorOccured, 200);
+      MySnacks.showSnack(context, Txt.errorOccured.tr(), 200);
     }
   }
 
@@ -18,7 +18,7 @@ class MyUrl {
     try {
       await launchUrl(Uri.parse(email));
     } catch (e) {
-      MySnacks.showSnack(context, Txt.errorOccured, 200);
+      MySnacks.showSnack(context, Txt.errorOccured.tr(), 200);
     }
   }
 }

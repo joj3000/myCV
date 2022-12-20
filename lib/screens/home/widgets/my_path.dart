@@ -8,10 +8,7 @@ class AboutMe extends StatelessWidget {
     return Column(
       children: [
         const MyTitle(Txt.aboutMe, Icons.person),
-        Text(
-          Txt.aboutMeTxt,
-          style: TxtStyles.aboutMeTextStyle(context),
-        ),
+        Text(Txt.aboutMeTxt.tr(), style: TxtStyles.aboutMeTextStyle(context)),
         const SizedBox(height: 50)
       ],
     );
@@ -60,10 +57,8 @@ class MyTitle extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 15),
-            Text(
-              title.toUpperCase(),
-              style: TxtStyles.rightPartTitle(context),
-            ),
+            Text(title.tr().toUpperCase(),
+                style: TxtStyles.rightPartTitle(context)),
           ],
         ),
         Divider(
@@ -107,17 +102,39 @@ class Subtitle extends StatelessWidget {
           children: [
             const Icon(Icons.arrow_forward_ios_rounded, size: 13),
             const SizedBox(width: 10),
-            Text(info.title, style: TxtStyles.subtitle(context)),
+            Text(info.title.tr(), style: TxtStyles.subtitle(context)),
             const Spacer(),
             Text(info.start.format(), style: TxtStyles.subtitleDate(context)),
-            Text(' - ${info.end == null ? Txt.now : info.end!.format()}',
+            Text(' - ${info.end == null ? Txt.now.tr() : info.end!.format()}',
                 style: TxtStyles.subtitleDate(context)),
           ],
         ),
         const SizedBox(height: 5),
-        Text(info.text, style: TxtStyles.subtitleText(context)),
+        if (info.projects.isEmpty)
+          Text(info.text.tr(), style: TxtStyles.subtitleText(context)),
+        if (info.projects.isNotEmpty) XPSubtitle(info),
         const SizedBox(height: 30),
       ],
+    );
+  }
+}
+
+class XPSubtitle extends StatelessWidget {
+  final EdXpInfos info;
+  const XPSubtitle(this.info, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: List.generate(
+        info.projects.length,
+        (i) => CompanyProject(
+          info.projects[i].company.tr(),
+          info.projects[i].project.tr(),
+          paddingTop: i == info.projects.length - 1,
+        ),
+      ),
     );
   }
 }
@@ -133,6 +150,34 @@ class Education extends StatelessWidget {
         ...educ.map((i) => Subtitle(i)).toList(),
         const SizedBox(height: 20)
       ],
+    );
+  }
+}
+
+class CompanyProject extends ConsumerWidget {
+  final String company;
+  final String project;
+  final bool paddingTop;
+  const CompanyProject(
+    this.company,
+    this.project, {
+    super.key,
+    this.paddingTop = false,
+  });
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Padding(
+      padding: EdgeInsets.fromLTRB(0, paddingTop ? 15 : 5, 0, 0),
+      child: Text.rich(
+        TextSpan(
+          children: [
+            TextSpan(text: company, style: TxtStyles.subtitleBoldText(context)),
+            TextSpan(text: ' : $project'),
+          ],
+        ),
+        style: TxtStyles.subtitleText(context),
+      ),
     );
   }
 }

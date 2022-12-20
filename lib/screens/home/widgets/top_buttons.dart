@@ -12,6 +12,8 @@ class TopButtons extends ConsumerWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
+        const CountryDropdown(),
+        const SizedBox(width: 15),
         if (isMobile) mobileDL(ref, context),
         if (!isMobile) webDL(ref, context),
         const SizedBox(width: 15),
@@ -32,7 +34,7 @@ class TopButtons extends ConsumerWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            Txt.dl,
+            Txt.dl.tr(),
             style: TextStyle(color: ext(context).themeSwitchIcon, fontSize: 10),
           ),
           const SizedBox(width: 10),

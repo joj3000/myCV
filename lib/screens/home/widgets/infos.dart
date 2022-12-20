@@ -43,7 +43,7 @@ class Infos extends StatelessWidget {
                     ? () => MyFunctions.clickable(context, info)
                     : null,
                 child: Text(
-                  info.text,
+                  info.text.tr(),
                   style: TxtStyles.profileText(context),
                 ),
               ),

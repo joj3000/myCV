@@ -8,6 +8,8 @@ export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:firebase_analytics/firebase_analytics.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:image_downloader_web/image_downloader_web.dart';
+export 'package:easy_localization/easy_localization.dart' hide TextDirection;
+export 'package:dropdown_button2/dropdown_button2.dart';
 
 export 'models/enums.dart';
 export 'models/const.dart';
@@ -36,11 +38,12 @@ export 'screens/home/widgets/infos.dart';
 export 'screens/home/widgets/ribbon.dart';
 export 'screens/home/widgets/skills.dart';
 export 'screens/home/widgets/my_path.dart';
-export 'screens/home/widgets/hobbies.dart';
+export 'screens/home/widgets/txt_infos.dart';
 export 'screens/home/widgets/skill_row.dart';
 export 'screens/home/widgets/title_bloc.dart';
 export 'screens/home/widgets/right_part.dart';
 export 'screens/home/widgets/top_profile.dart';
 export 'screens/home/widgets/top_buttons.dart';
+export 'screens/home/widgets/country_dropdown.dart';
 
 export 'widgets/sizer.dart';

@@ -13,7 +13,7 @@ class TitleBloc extends StatelessWidget {
       color: ext(context).ribbonBloc,
       child: Center(
         child: Text(
-          title.toUpperCase(),
+          title.tr().toUpperCase(),
           style: TxtStyles.titleBloc,
         ),
       ),

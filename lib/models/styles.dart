@@ -12,7 +12,7 @@ class TxtStyles {
       color: ext(ctx).text);
 
   static TextStyle job(ctx) => TextStyle(
-      fontSize: 12,
+      fontSize: 11,
       fontWeight: FontWeight.w600,
       letterSpacing: 1,
       color: ext(ctx).text);
@@ -44,6 +44,10 @@ class TxtStyles {
   /// Subtitle text
   static TextStyle subtitleText(ctx) => TextStyle(
       fontSize: 13, fontWeight: FontWeight.w500, color: ext(ctx).text);
+
+  /// Subtitle text
+  static TextStyle subtitleBoldText(ctx) => TextStyle(
+      fontSize: 13, fontWeight: FontWeight.w700, color: ext(ctx).text);
 
   /// Subtitle date
   static TextStyle subtitleDate(ctx) => TextStyle(

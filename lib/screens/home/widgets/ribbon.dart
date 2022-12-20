@@ -30,16 +30,13 @@ class Ribbon extends StatelessWidget {
             ],
           ),
           Column(
-            children: [
-              const Infos(),
+            children: const [
+              Infos(),
               Skills(Txt.languages, myLanguages, isMobile: true),
-              Skills(
-                Txt.otherSkills,
-                myOtherSkills,
-                isMobile: true,
-                fontSize: 11,
-              ),
-              const Hobbies(),
+              Skills(Txt.otherSkills, myOtherSkills,
+                  isMobile: true, fontSize: 11),
+              TxtInfos(Txt.softSkills, mySoftSkills),
+              TxtInfos(Txt.hobbies, myHobbies),
             ],
           ),
         ],

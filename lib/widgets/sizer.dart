@@ -10,7 +10,7 @@ import 'dart:ui' as ui;
 /// platform size (upper) steps
 enum PlatformSize {
   mobile(480),
-  tablet(600),
+  tablet(610),
   web(1100);
 
   final int width;
