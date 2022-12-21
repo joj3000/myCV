@@ -12,10 +12,7 @@ class _CountryDropdownState extends ConsumerState<CountryDropdown> {
   String country = 'fr';
 
   void setFlag(String flag) async {
-    print('VAL)CJ=$flag');
-
     if (flag != country) {
-      print('WENT HERE with country=$country, lag=$flag');
       await context.setLocale(Locale(flag));
       setState(() {
         country = flag;
@@ -34,7 +31,6 @@ class _CountryDropdownState extends ConsumerState<CountryDropdown> {
           value: country,
           dropdownPadding: EdgeInsets.zero,
           onChanged: (val) {
-            print('VAL=$val');
             setFlag(val!);
           },
           items: [
