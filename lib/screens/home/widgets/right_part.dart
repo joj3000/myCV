@@ -10,8 +10,7 @@ class RightPart extends ConsumerWidget {
       child: Stack(
         children: [
           Container(
-            height: MyConst.maxCvHeight,
-            padding: const EdgeInsets.fromLTRB(50, 45, 50, 45),
+            padding: const EdgeInsets.fromLTRB(50, 50, 50, 20),
             color: extension.background,
             child: SingleChildScrollView(
               child: Column(

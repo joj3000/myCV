@@ -23,6 +23,7 @@ class MobileVersion extends StatelessWidget {
           decoration: BoxDecoration(color: ext(context).ribbonBackground),
           child: Column(
             children: [
+              const SizedBox(height: 15),
               const TopProfile(isMobile: true),
               skills1(),
               skills2(),

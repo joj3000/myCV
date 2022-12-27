@@ -4,7 +4,7 @@ class MyFunctions {
   static void clickable(BuildContext context, Info info) {
     switch (info.type) {
       case InfoType.website:
-        MySnacks.showSnack(context, Txt.alreadyThere, 250);
+        MySnacks.showSnack(context, Txt.alreadyThere.tr(), 250);
         break;
       case InfoType.email:
         MyUrl.launchMyEmail(context,

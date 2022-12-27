@@ -12,8 +12,9 @@ class TopButtons extends ConsumerWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
+        if (isMobile) const SizedBox(width: 15),
         const CountryDropdown(),
-        const SizedBox(width: 15),
+        const SizedBox(width: 5),
         if (isMobile) mobileDL(ref, context),
         if (!isMobile) webDL(ref, context),
         const SizedBox(width: 15),

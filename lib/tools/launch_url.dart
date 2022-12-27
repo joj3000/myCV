@@ -5,7 +5,7 @@ class MyUrl {
       {required String url}) async {
     MyAnalytics.githubClicked();
     try {
-      await launchUrl(Uri.parse(url));
+      await launchUrl(Uri.parse(url.tr()));
     } catch (e) {
       MySnacks.showSnack(context, Txt.errorOccured.tr(), 200);
     }

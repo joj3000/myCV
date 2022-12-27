@@ -95,6 +95,8 @@ class Subtitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final lang = context.locale.languageCode;
+    final isFrench = lang == 'fr';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -104,9 +106,14 @@ class Subtitle extends StatelessWidget {
             const SizedBox(width: 10),
             Text(info.title.tr(), style: TxtStyles.subtitle(context)),
             const Spacer(),
-            Text(info.start.format(), style: TxtStyles.subtitleDate(context)),
-            Text(' - ${info.end == null ? Txt.now.tr() : info.end!.format()}',
+            if (isFrench)
+              Text('${Txt.now.tr()} ', style: TxtStyles.subtitleDate(context)),
+            Text(info.start.format('MMM yyyy', lang),
                 style: TxtStyles.subtitleDate(context)),
+            if (!isFrench)
+              Text(
+                  ' - ${info.end == null ? Txt.now.tr() : info.end!.format('MMM yyyy', lang)}',
+                  style: TxtStyles.subtitleDate(context)),
           ],
         ),
         const SizedBox(height: 5),
