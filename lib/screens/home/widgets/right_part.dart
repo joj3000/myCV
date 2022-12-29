@@ -11,15 +11,19 @@ class RightPart extends ConsumerWidget {
         children: [
           Container(
             padding: const EdgeInsets.fromLTRB(50, 50, 50, 20),
+            // color: Colors.transparent,
             color: extension.background,
-            child: SingleChildScrollView(
-              child: Column(
-                children: const [
-                  AboutMe(),
-                  Education(),
-                  Experience(),
-                  CodingSkills(),
-                ],
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: const [
+                    AboutMe(),
+                    Education(),
+                    Experience(),
+                    CodingSkills(),
+                  ],
+                ),
               ),
             ),
           ),

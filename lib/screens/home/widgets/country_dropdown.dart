@@ -1,5 +1,7 @@
 import '../../../libs.dart';
 
+String country = 'fr';
+
 class CountryDropdown extends ConsumerStatefulWidget {
   const CountryDropdown({Key? key}) : super(key: key);
 
@@ -9,8 +11,6 @@ class CountryDropdown extends ConsumerStatefulWidget {
 }
 
 class _CountryDropdownState extends ConsumerState<CountryDropdown> {
-  String country = 'fr';
-
   void setFlag(String flag) async {
     if (flag != country) {
       await context.setLocale(Locale(flag));
@@ -19,6 +19,12 @@ class _CountryDropdownState extends ConsumerState<CountryDropdown> {
       });
     }
   }
+
+// @override
+//   void initState() {
+//     super.initState();
+
+//   }
 
   @override
   Widget build(BuildContext context) {
