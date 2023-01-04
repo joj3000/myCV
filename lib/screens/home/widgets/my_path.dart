@@ -106,11 +106,11 @@ class Subtitle extends StatelessWidget {
             const SizedBox(width: 10),
             Text(info.title.tr(), style: TxtStyles.subtitle(context)),
             const Spacer(),
-            if (isFrench)
+            if (isFrench && info.end == null)
               Text('${Txt.now.tr()} ', style: TxtStyles.subtitleDate(context)),
             Text(info.start.format('MMM yyyy', lang),
                 style: TxtStyles.subtitleDate(context)),
-            if (!isFrench)
+            if (!isFrench || info.end != null)
               Text(
                   ' - ${info.end == null ? Txt.now.tr() : info.end!.format('MMM yyyy', lang)}',
                   style: TxtStyles.subtitleDate(context)),
