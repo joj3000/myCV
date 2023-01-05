@@ -11,7 +11,7 @@ void main() async {
         startLocale: const Locale('fr'),
         path: 'assets/translations',
         fallbackLocale: const Locale('fr'),
-        child: const MyCV(),
+        child: const PrecacheMyImages(child: MyCV()),
       ),
     ),
   );
