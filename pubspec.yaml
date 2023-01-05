@@ -24,7 +24,6 @@ dependencies:
   firebase_analytics: ^9.3.8
   easy_localization: ^3.0.1
   dropdown_button2: ^1.9.2
-  file_saver: ^0.1.1
   download: ^0.0.1+1
 
 dev_dependencies:
