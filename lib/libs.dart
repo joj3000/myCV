@@ -10,6 +10,8 @@ export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:image_downloader_web/image_downloader_web.dart';
 export 'package:easy_localization/easy_localization.dart' hide TextDirection;
 export 'package:dropdown_button2/dropdown_button2.dart';
+export 'package:file_saver/file_saver.dart';
+export 'package:download/download.dart';
 
 export 'models/enums.dart';
 export 'models/const.dart';
