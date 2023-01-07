@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../libs.dart';
 
 class DL {
+  /// Download the CV in pdf, from assets, to the download folder of the user.
   static Future<void> downloadCV(BuildContext context) async {
     MyAnalytics.downloadClicked();
     try {

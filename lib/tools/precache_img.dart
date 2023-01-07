@@ -1,5 +1,6 @@
 import '../libs.dart';
 
+/// Precache images to prevent any flickering right after loading
 class PrecacheMyImg {
   static List<String> imgToPrecache = [
     Img.profile,

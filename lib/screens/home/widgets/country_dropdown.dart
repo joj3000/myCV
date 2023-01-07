@@ -20,12 +20,6 @@ class _CountryDropdownState extends ConsumerState<CountryDropdown> {
     }
   }
 
-// @override
-//   void initState() {
-//     super.initState();
-
-//   }
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
