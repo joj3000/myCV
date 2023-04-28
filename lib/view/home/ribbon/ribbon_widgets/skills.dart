@@ -1,5 +1,4 @@
-
-import '../../../libs.dart';
+import '../../../../libs.dart';
 
 class Skills extends StatelessWidget {
   final List<Skill> skills;

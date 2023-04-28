@@ -1,5 +1,4 @@
-
-import '../../../libs.dart';
+import '../../../../libs.dart';
 
 class TxtInfos extends StatelessWidget {
   final bool isMobile;

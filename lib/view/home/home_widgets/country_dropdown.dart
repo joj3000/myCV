@@ -1,4 +1,3 @@
-
 import '../../../libs.dart';
 
 String country = 'fr';
