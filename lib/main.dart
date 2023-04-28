@@ -41,9 +41,9 @@ class _MyCVState extends ConsumerState<MyCV> {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      darkTheme: MyThemes.dark,
+      darkTheme: AppThemes.dark,
       themeMode: ThemeMode.light,
-      theme: mode ? MyThemes.dark : MyThemes.light,
+      theme: mode ? AppThemes.dark : AppThemes.light,
       home: const Home(),
     );
   }
