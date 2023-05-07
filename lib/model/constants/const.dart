@@ -65,6 +65,7 @@ class AppConst {
       const [
         CompanyProj(Txt.valratio, Txt.valratioProj),
         CompanyProj(Txt.bucks, Txt.bucksProj),
+        CompanyProj(Txt.synox, Txt.synoxProj),
       ],
       DateTime(2022, 7),
       null,

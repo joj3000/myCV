@@ -37,6 +37,8 @@ class Txt {
   static const String valratioProj = 'valratioProj';
   static const String bucks = '80Bucks';
   static const String bucksProj = '80BucksProj';
+  static const String synox = 'Synox';
+  static const String synoxProj = 'synoxProj';
 
   /// HOBBIES
   static const String hobbies = 'hobbies';

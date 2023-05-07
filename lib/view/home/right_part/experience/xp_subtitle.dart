@@ -13,7 +13,7 @@ class XPSubtitle extends StatelessWidget {
         (i) => CompanyProject(
           info.projects[i].company.tr(),
           info.projects[i].project.tr(),
-          paddingTop: i == info.projects.length - 1,
+          paddingTop: i > 0,
         ),
       ),
     );

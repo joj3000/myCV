@@ -23,6 +23,8 @@
     "xp2": "ENTREPRISES",
     "valratio": "Valratio",
     "valratioProj": "Développement d’un site (web app) et d’une application mobile (Stack : Flutter/Dart, Firebase, Google Map, GCP, Python, Docker, JS/TS).",
+    "synox": "Synox",
+    "synoxProj": "Développement de leur marque blanche d'applications de gestion de flotte SoFleet et Eseanergy  (Stack : Flutter/Dart, REST Api, Embedded OAuth 2.1, Firebase Cloud Messaging).",
     "80Bucks": "80-Bucks Agency",
     "80BucksProj": "Développement de la partie « Livraison » de l’application OYOF (Stack : Flutter/Dart, Firebase, Google Map, JS/TS).",
     "xp3": "AMIS",

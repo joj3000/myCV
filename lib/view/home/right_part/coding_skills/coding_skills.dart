@@ -18,6 +18,7 @@ class CodingSkills extends StatelessWidget {
                 .toList(),
           ),
         ),
+        const SizedBox(height: 30),
       ],
     );
   }
