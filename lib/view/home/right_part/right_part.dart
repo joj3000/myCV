@@ -11,7 +11,6 @@ class RightPart extends ConsumerWidget {
         children: [
           Container(
             padding: const EdgeInsets.fromLTRB(50, 50, 50, 20),
-            // color: Colors.transparent,
             color: extension.background,
             child: Align(
               alignment: Alignment.topCenter,
