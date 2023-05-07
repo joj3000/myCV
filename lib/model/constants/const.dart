@@ -9,7 +9,7 @@ class AppConst {
   static const double titleIconSize = 22;
   static const double a4Format = 29.7 / 21;
   static const double maxCvWidth = 800;
-  static const double maxCvHeight = maxCvWidth * a4Format + 100;
+  static const double maxCvHeight = maxCvWidth * a4Format + 200;
   static const double profilePictureRadius = 120;
   static const double profilePictureRadiusMobile = 140;
 
