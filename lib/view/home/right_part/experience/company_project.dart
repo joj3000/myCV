@@ -18,8 +18,10 @@ class CompanyProject extends ConsumerWidget {
       child: Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: company, style: TxtStyles.subtitleBoldText(context)),
-            TextSpan(text: ' : $project'),
+            TextSpan(
+                text: '$company : ',
+                style: TxtStyles.subtitleBoldText(context)),
+            TextSpan(text: project),
           ],
         ),
         style: TxtStyles.subtitleText(context),

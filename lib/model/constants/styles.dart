@@ -1,4 +1,3 @@
-
 import '../../libs.dart';
 
 class TxtStyles {
@@ -40,7 +39,7 @@ class TxtStyles {
 
   /// Subtitle
   static TextStyle subtitle(ctx) => TextStyle(
-      fontSize: 14, fontWeight: FontWeight.w700, color: ext(ctx).text);
+      fontSize: 14, fontWeight: FontWeight.w700, color: ext(ctx).title);
 
   /// Subtitle text
   static TextStyle subtitleText(ctx) => TextStyle(
@@ -48,7 +47,7 @@ class TxtStyles {
 
   /// Subtitle text
   static TextStyle subtitleBoldText(ctx) => TextStyle(
-      fontSize: 13, fontWeight: FontWeight.w700, color: ext(ctx).text);
+      fontSize: 13.5, fontWeight: FontWeight.w700, color: ext(ctx).title);
 
   /// Subtitle date
   static TextStyle subtitleDate(ctx) => TextStyle(
