@@ -40,8 +40,8 @@ class TopButtons extends ConsumerWidget {
           ),
           const SizedBox(width: 10),
           Icon(
-            Icons.download_for_offline_outlined,
-            size: 20,
+            Icons.picture_as_pdf_rounded,
+            size: 17,
             color: ext(context).themeSwitchIcon,
           ),
         ],
@@ -62,8 +62,8 @@ class TopButtons extends ConsumerWidget {
             color: ext(context).ribbonBloc,
           ),
           child: Icon(
-            Icons.download_for_offline_outlined,
-            size: isMobile ? 28 : 20,
+            Icons.picture_as_pdf_rounded,
+            size: isMobile ? 25 : 18,
             color: ext(context).themeSwitchIcon,
           ),
         ),
