@@ -1,6 +1,6 @@
-
 import '../../libs.dart';
 
+/// Main (and only) page
 class Home extends StatefulWidget {
   const Home({super.key});
 
