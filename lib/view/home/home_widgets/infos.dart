@@ -8,12 +8,18 @@ class Infos extends StatelessWidget {
     return Column(
       children: [
         const TitleBloc(Txt.infos),
-        ...AppConst.myInfos.map((i) => infosRow(context, i)).toList()
+        ...AppConst.myInfos.map((i) => InfosRow(i)).toList()
       ],
     );
   }
+}
 
-  Widget infosRow(BuildContext context, Info info) {
+class InfosRow extends StatelessWidget {
+  final Info info;
+  const InfosRow(this.info, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10, left: 15),
       child: SizedBox(

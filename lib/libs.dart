@@ -18,9 +18,12 @@ export 'model/constants/texts.dart';
 export 'model/constants/images.dart';
 export 'model/constants/themes.dart';
 export 'model/constants/styles.dart';
-export 'model/classes/classes.dart';
 export 'model/typedefs/map_string_dynamic.dart';
 export 'model/extensions/date.dart';
+export 'model/classes/company_proj.dart';
+export 'model/classes/ed_xp_infos.dart';
+export 'model/classes/infos.dart';
+export 'model/classes/skill.dart';
 
 export 'view_model/providers/change_theme.dart';
 export 'view_model/tools/functions.dart';

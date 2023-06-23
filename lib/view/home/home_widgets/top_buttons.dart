@@ -15,15 +15,77 @@ class TopButtons extends ConsumerWidget {
         if (isMobile) const SizedBox(width: 15),
         const CountryDropdown(),
         const SizedBox(width: 5),
-        if (isMobile) mobileDL(ref, context),
-        if (!isMobile) webDL(ref, context),
+        if (isMobile) DLButton(isMobile: isMobile),
+        if (!isMobile) const DLButton(),
         const SizedBox(width: 15),
-        dayNightSwitch(ref, context),
+        DayNightSwitch(isMobile),
       ],
     );
   }
+}
 
-  Widget webDL(WidgetRef ref, BuildContext context) {
+class DayNightSwitch extends ConsumerStatefulWidget {
+  final bool isMobile;
+
+  const DayNightSwitch(this.isMobile, {super.key});
+
+  @override
+  ConsumerState<ConsumerStatefulWidget> createState() => _DayNightSwitchState();
+}
+
+class _DayNightSwitchState extends ConsumerState<DayNightSwitch> {
+  @override
+  Widget build(BuildContext context) {
+    final mode = ref.watch(changeThemeProvider);
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () => mode.switchTheme(),
+        child: Container(
+          height: widget.isMobile ? 40 : 30,
+          width: widget.isMobile ? 40 : 30,
+          decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: getBgSwitchColor(ref, context, mode)),
+          child: Icon(
+            mode.isNightMode ? Icons.light_mode : Icons.dark_mode,
+            size: widget.isMobile ? 25 : 20,
+            color: ext(context).themeSwitchIcon,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Color? getBgSwitchColor(
+      WidgetRef ref, BuildContext context, ModeSwitcher mode) {
+    if (widget.isMobile) {
+      return mode.isNightMode
+          ? ext(context).ribbonBloc
+          : ext(context).ribbonBloc;
+    } else {
+      return mode.isNightMode
+          ? ext(context).ribbonBackground
+          : ext(context).ribbonBloc;
+    }
+  }
+}
+
+class DLButton extends ConsumerStatefulWidget {
+  final bool isMobile;
+  const DLButton({this.isMobile = false, super.key});
+
+  @override
+  ConsumerState<ConsumerStatefulWidget> createState() => _DLButtonState();
+}
+
+class _DLButtonState extends ConsumerState<DLButton> {
+  @override
+  Widget build(BuildContext context) {
+    return widget.isMobile ? mobileDL() : webDL();
+  }
+
+  Widget webDL() {
     return ElevatedButton(
       onPressed: () => DL.downloadCV(context),
       style: ElevatedButton.styleFrom(
@@ -49,60 +111,25 @@ class TopButtons extends ConsumerWidget {
     );
   }
 
-  Widget mobileDL(WidgetRef ref, BuildContext context) {
+  Widget mobileDL() {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () => DL.downloadCV(context),
         child: Container(
-          height: isMobile ? 40 : 30,
-          width: isMobile ? 40 : 30,
+          height: widget.isMobile ? 40 : 30,
+          width: widget.isMobile ? 40 : 30,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: ext(context).ribbonBloc,
           ),
           child: Icon(
             Icons.picture_as_pdf_rounded,
-            size: isMobile ? 25 : 18,
+            size: widget.isMobile ? 25 : 18,
             color: ext(context).themeSwitchIcon,
           ),
         ),
       ),
     );
-  }
-
-  Widget dayNightSwitch(WidgetRef ref, BuildContext context) {
-    final mode = ref.watch(changeThemeProvider);
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: () => mode.switchTheme(),
-        child: Container(
-          height: isMobile ? 40 : 30,
-          width: isMobile ? 40 : 30,
-          decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: getBgSwitchColor(ref, context, mode)),
-          child: Icon(
-            mode.isNightMode ? Icons.light_mode : Icons.dark_mode,
-            size: isMobile ? 25 : 20,
-            color: ext(context).themeSwitchIcon,
-          ),
-        ),
-      ),
-    );
-  }
-
-  Color? getBgSwitchColor(
-      WidgetRef ref, BuildContext context, ModeSwitcher mode) {
-    if (isMobile) {
-      return mode.isNightMode
-          ? ext(context).ribbonBloc
-          : ext(context).ribbonBloc;
-    } else {
-      return mode.isNightMode
-          ? ext(context).ribbonBackground
-          : ext(context).ribbonBloc;
-    }
   }
 }

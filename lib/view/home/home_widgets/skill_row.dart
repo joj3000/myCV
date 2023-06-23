@@ -41,14 +41,22 @@ class SkillRow extends StatelessWidget {
           ),
         ),
         SizedBox(width: txtToDotDist ?? 15),
-        dotMark(context, skill.mark, isRightPart)
+        DotMark(skill.mark, isRightPart)
       ],
     );
   }
+}
 
-  Widget dotMark(BuildContext context, int mark, bool isRightPartDot,
-      {int max = 5}) {
-    mark = mark < 0
+class DotMark extends StatelessWidget {
+  final int mark;
+
+  final bool isRightPartDot;
+  final int max;
+  const DotMark(this.mark, this.isRightPartDot, {super.key, this.max = 5});
+
+  @override
+  Widget build(BuildContext context) {
+    final mrk = mark < 0
         ? 0
         : mark > max
             ? max
@@ -61,7 +69,7 @@ class SkillRow extends StatelessWidget {
           child: CircleAvatar(
               radius: 4.5,
               backgroundColor:
-                  getDotColor(context, index + 1 <= mark, isRightPartDot)),
+                  getDotColor(context, index + 1 <= mrk, isRightPartDot)),
         ),
       ),
     );

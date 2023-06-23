@@ -7,15 +7,26 @@ class MobileVersion extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: [
-          profile(context),
-          bottomPart(context),
+        children: const [
+          MobileVersionProfile(),
+          MobileVersionBottomPart(),
         ],
       ),
     );
   }
+}
 
-  Widget profile(BuildContext context) {
+class MobileVersionProfile extends ConsumerStatefulWidget {
+  const MobileVersionProfile({super.key});
+
+  @override
+  ConsumerState<ConsumerStatefulWidget> createState() =>
+      _MobileVersionProfileState();
+}
+
+class _MobileVersionProfileState extends ConsumerState<MobileVersionProfile> {
+  @override
+  Widget build(BuildContext context) {
     return Stack(
       clipBehavior: Clip.none,
       children: [
@@ -66,8 +77,20 @@ class MobileVersion extends StatelessWidget {
       ],
     );
   }
+}
 
-  Widget bottomPart(BuildContext context) {
+class MobileVersionBottomPart extends ConsumerStatefulWidget {
+  const MobileVersionBottomPart({super.key});
+
+  @override
+  ConsumerState<ConsumerStatefulWidget> createState() =>
+      _MobileVersionBottomPartState();
+}
+
+class _MobileVersionBottomPartState
+    extends ConsumerState<MobileVersionBottomPart> {
+  @override
+  Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(color: ext(context).background),
       child: Padding(

@@ -8,16 +8,22 @@ class Ribbon extends StatelessWidget {
     return SizedBox(
       width: AppConst.leftRibbonWidth,
       child: Column(
-        children: [
-          const TopProfile(),
-          bottomProfile(context),
+        children: const [
+          TopProfile(),
+          RibbonBottomProfile(),
         ],
       ),
     );
   }
 
   /// Part of the profile inside the colored ribbon
-  Widget bottomProfile(BuildContext context) {
+}
+
+class RibbonBottomProfile extends StatelessWidget {
+  const RibbonBottomProfile({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return Expanded(
       child: Stack(
         alignment: Alignment.topCenter,
