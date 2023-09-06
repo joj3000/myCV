@@ -15,6 +15,7 @@ class Txt {
   static const String myEmail = 'myEmail';
   static const String myGithub = 'myGithub';
   static const String myWebsite = 'myWebsite';
+  static const String myPhone = 'myPhone';
 
   /// EDUCATION
   static const String education = 'education';
@@ -80,6 +81,7 @@ class Txt {
   static const String alreadyThere = 'alreadyThere';
   static const String githubUrl = 'githubUrl';
   static const String dl = 'dl';
+  static const String title = 'title';
 
   /// ERRORS
   static const String errorOccured = 'errorOccured';

@@ -39,6 +39,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/pdfs/
     - assets/images/
     - assets/translations/
  

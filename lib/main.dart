@@ -37,7 +37,7 @@ class _MyCVState extends ConsumerState<MyCV> {
   Widget build(BuildContext context) {
     final bool mode = ref.watch(changeThemeProvider).isNightMode;
     return MaterialApp(
-      title: 'Hey, I\'m Joran',
+      title: Txt.title.tr(),
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,

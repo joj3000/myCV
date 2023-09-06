@@ -25,6 +25,7 @@ class AppConst {
     Info(Txt.myEmail, Icons.email, type: InfoType.email),
     Info(Txt.myGithub, FontAwesomeIcons.github, type: InfoType.github),
     Info(Txt.myWebsite, Icons.language, type: InfoType.website),
+    Info(Txt.myPhone, Icons.phone_outlined, type: InfoType.phone),
   ];
 
   static List<EdXpInfos> educ = [
