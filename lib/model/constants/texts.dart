@@ -81,7 +81,7 @@ class Txt {
   static const String alreadyThere = 'alreadyThere';
   static const String githubUrl = 'githubUrl';
   static const String dl = 'dl';
-  static const String title = 'title';
+  static const String title = 'Hey, I\'m Joran';
 
   /// ERRORS
   static const String errorOccured = 'errorOccured';
