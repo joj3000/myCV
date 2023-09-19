@@ -1,7 +1,7 @@
 .fvm/flutter_sdk
 firebase_options.dart
-.firebase
-.vscode
+.firebase/
+.vscode/
 
 # Miscellaneous
 *.class
