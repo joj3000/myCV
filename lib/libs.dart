@@ -1,4 +1,5 @@
 export 'firebase_options.dart';
+export 'package:flutter_web_plugins/url_strategy.dart';
 
 export 'package:flutter/material.dart';
 export 'package:url_launcher/url_launcher.dart';

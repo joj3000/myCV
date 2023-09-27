@@ -8,7 +8,8 @@ class MyFunctions {
         break;
       case InfoType.email:
         MyUrl.launchMyEmail(context,
-            email: "mailto:${Txt.myEmail.tr()}?subject=Contact&body=Hey Joran");
+            email:
+                "mailto:${Txt.myEmail.tr()}?subject=Contact&body=Hey Joran,");
         break;
       case InfoType.github:
         MyUrl.launchMyUrl(context, url: Txt.githubUrl);

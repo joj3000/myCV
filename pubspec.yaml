@@ -11,6 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
 
 
   intl: ^0.17.0
@@ -25,10 +27,12 @@ dependencies:
   easy_localization: ^3.0.1
   dropdown_button2: ^1.9.2
   download: ^0.0.1+1
+  # url_strategy: ^0.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  
 
   flutter_lints: ^2.0.0
 
