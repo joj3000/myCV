@@ -1,6 +1,7 @@
 class CompanyProj {
   final String company;
   final String project;
-
-  const CompanyProj(this.company, this.project);
+  final DateTime start;
+  final DateTime end;
+  const CompanyProj(this.company, this.project, this.start, this.end);
 }

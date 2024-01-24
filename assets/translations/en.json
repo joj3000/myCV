@@ -32,6 +32,8 @@
     "80BucksProj": "Developed the « Delivery » part of the OYOF application (Stack : Flutter/Dart, Firebase, Google Map, JS/TS).",
     "synox": "Synox",
     "synoxProj": "Developed two vehicle management apps (white mark) SoFleet and Eseanergy (Stack : Flutter/Dart, REST Api, Embedded OAuth 2.1, Firebase Cloud Messaging).",
+    "entretienPPProj": "Developed an internal app to manage their employees (Stack : Flutter/Dart, Firebase, Firebase Cloud Functions, Cloud Messaging, JS/TS).",
+    "jobMeProj": "Developed the \"Jobber\" section of their internal app (Stack : Flutter/Dart, MongoDB).",
     "hobby1": "Fitness",
     "hobby2": "Video Games",
     "hobby3": "Personal Projects",

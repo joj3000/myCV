@@ -11,8 +11,7 @@ class XPSubtitle extends StatelessWidget {
       children: List.generate(
         info.projects.length,
         (i) => CompanyProject(
-          info.projects[i].company.tr(),
-          info.projects[i].project.tr(),
+          info.projects[i],
           paddingTop: i > 0,
         ),
       ),

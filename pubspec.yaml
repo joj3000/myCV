@@ -15,15 +15,16 @@ dependencies:
     sdk: flutter
 
 
-  intl: ^0.17.0
+  intl: ^0.18.1
   cupertino_icons: ^1.0.2
   flutter_riverpod: ^1.0.4
-  firebase_core: ^1.22.0
+  cloud_firestore: ^4.14.0
+  firebase_core: ^2.24.2
   auto_size_text: ^3.0.0
   url_launcher: ^6.1.5
+  firebase_analytics: ^10.8.0
   font_awesome_flutter: ^10.2.1
   image_downloader_web: ^1.0.2
-  firebase_analytics: ^9.3.8
   easy_localization: ^3.0.1
   dropdown_button2: ^1.9.2
   download: ^0.0.1+1

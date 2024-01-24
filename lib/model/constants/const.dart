@@ -33,50 +33,41 @@ class AppConst {
       Txt.educ1,
       Txt.educ1Txt,
       [],
-      DateTime(2012, 9),
-      DateTime(2015, 6),
+      DateTime(2012, 09, 1),
+      DateTime(2015, 06, 1),
     ),
     EdXpInfos(
       Txt.educ2,
       Txt.educ2Txt,
       [],
-      DateTime(2015, 8),
-      DateTime(2016, 6),
+      DateTime(2015, 08, 1),
+      DateTime(2016, 06, 1),
     ),
     EdXpInfos(
       Txt.educ3,
       Txt.educ3Txt,
       [],
-      DateTime(2018, 12),
-      DateTime(2020, 6),
+      DateTime(2018, 12, 1),
+      DateTime(2020, 06, 1),
     ),
   ];
 
   static List<EdXpInfos> xp = [
     EdXpInfos(
-      Txt.xp1,
-      Txt.xp1Txt,
-      [],
-      DateTime(2020, 6),
-      null,
-    ),
-    EdXpInfos(
       Txt.xp2,
       Txt.xp2Txt,
-      const [
-        CompanyProj(Txt.valratio, Txt.valratioProj),
-        CompanyProj(Txt.bucks, Txt.bucksProj),
-        CompanyProj(Txt.synox, Txt.synoxProj),
+      [
+        CompanyProj(Txt.valratio, Txt.valratioProj, DateTime(2022, 7, 1),
+            DateTime(2022, 10, 1)),
+        CompanyProj(Txt.bucks, Txt.bucksProj, DateTime(2022, 10, 1),
+            DateTime(2023, 2, 1)),
+        CompanyProj(Txt.synox, Txt.synoxProj, DateTime(2023, 3, 1),
+            DateTime(2023, 6, 1)),
+        CompanyProj(Txt.entretienPP, Txt.entretienPPProj, DateTime(2023, 8, 1),
+            DateTime(2023, 11, 1)),
+        CompanyProj(Txt.jobMe, Txt.jobMeProj, DateTime(2023, 11, 1),
+            DateTime(2023, 12, 1)),
       ],
-      DateTime(2022, 7),
-      null,
-    ),
-    EdXpInfos(
-      Txt.xp3,
-      Txt.xp3Txt,
-      [],
-      DateTime(2020, 6),
-      null,
     ),
   ];
 

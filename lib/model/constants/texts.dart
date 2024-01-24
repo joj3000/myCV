@@ -40,6 +40,10 @@ class Txt {
   static const String bucksProj = '80BucksProj';
   static const String synox = 'Synox';
   static const String synoxProj = 'synoxProj';
+  static const String entretienPP = 'Entretien Platinum Plus';
+  static const String entretienPPProj = 'entretienPPProj';
+  static const String jobMe = 'JobMe';
+  static const String jobMeProj = 'jobMeProj';
 
   /// HOBBIES
   static const String hobbies = 'hobbies';

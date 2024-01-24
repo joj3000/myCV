@@ -45,13 +45,17 @@ class TxtStyles {
   static TextStyle subtitleText(ctx) => TextStyle(
       fontSize: 13, fontWeight: FontWeight.w500, color: ext(ctx).text);
 
+  /// Subtitle date
+  static TextStyle subtitleDate(ctx) => TextStyle(
+      fontSize: 13, fontWeight: FontWeight.w400, color: ext(ctx).text);
+
   /// Subtitle text
   static TextStyle subtitleBoldText(ctx) => TextStyle(
       fontSize: 13.5, fontWeight: FontWeight.w700, color: ext(ctx).title);
 
   /// Subtitle date
-  static TextStyle subtitleDate(ctx) => TextStyle(
-      fontSize: 11, fontWeight: FontWeight.w300, color: ext(ctx).text);
+  static TextStyle subtitleDateGrey(ctx) => TextStyle(
+      fontSize: 12.5, fontWeight: FontWeight.w300, color: ext(ctx).date);
 
   /// Hobby text
   static TextStyle hobbyTxt(ctx) => TextStyle(

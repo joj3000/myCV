@@ -8,6 +8,7 @@ class AppThemes {
         background: Colors.white,
         text: Color(0xff47464b),
         title: Color(0xff47464b),
+        date: Color.fromARGB(255, 68, 67, 67),
         ribbonBackground: Color(0xffEEC0C0),
         ribbonBloc: Color(0xff47464b),
         ribbonBlocTitle: Colors.white,
@@ -30,6 +31,7 @@ class AppThemes {
         background: Color(0xff5a6893),
         ribbonBackground: Color(0xff282A36),
         text: Colors.white,
+        date: Color.fromARGB(255, 217, 216, 216),
         title: Color(0xff282A36),
         ribbonBloc: Color(0xff5a6893),
         ribbonBlocTitle: Colors.white,
@@ -52,6 +54,7 @@ class AppColors extends ThemeExtension<AppColors> {
     required this.background,
     required this.text,
     required this.title,
+    required this.date,
     required this.ribbonBackground,
     required this.ribbonBloc,
     required this.ribbonBlocTitle,
@@ -68,6 +71,7 @@ class AppColors extends ThemeExtension<AppColors> {
   final Color? background;
   final Color? text;
   final Color? title;
+  final Color? date;
   final Color? ribbonBackground;
   final Color? ribbonBloc;
   final Color? ribbonBlocTitle;
@@ -85,6 +89,7 @@ class AppColors extends ThemeExtension<AppColors> {
     Color? background,
     Color? text,
     Color? title,
+    Color? date,
     Color? ribbonBackground,
     Color? ribbonBloc,
     Color? titleBloc,
@@ -102,6 +107,7 @@ class AppColors extends ThemeExtension<AppColors> {
       background: background ?? this.background,
       text: text ?? this.text,
       title: title ?? this.title,
+      date: date ?? this.date,
       ribbonBackground: ribbonBackground ?? this.ribbonBackground,
       ribbonBloc: ribbonBloc ?? this.ribbonBloc,
       ribbonBlocTitle: ribbonBlocTitle ?? this.ribbonBlocTitle,
@@ -125,6 +131,7 @@ class AppColors extends ThemeExtension<AppColors> {
       background: Color.lerp(background, other.background, t),
       text: Color.lerp(text, other.text, t),
       title: Color.lerp(title, other.title, t),
+      date: Color.lerp(date, other.date, t),
       ribbonBackground: Color.lerp(ribbonBackground, other.ribbonBackground, t),
       ribbonBloc: Color.lerp(ribbonBloc, other.ribbonBloc, t),
       ribbonBlocTitle: Color.lerp(ribbonBlocTitle, other.ribbonBlocTitle, t),
