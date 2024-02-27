@@ -1,4 +1,4 @@
-import '../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 class RightPart extends ConsumerWidget {
   const RightPart({super.key});
@@ -12,11 +12,11 @@ class RightPart extends ConsumerWidget {
           Container(
             padding: const EdgeInsets.fromLTRB(50, 50, 50, 20),
             color: extension.background,
-            child: Align(
+            child: const Align(
               alignment: Alignment.topCenter,
               child: SingleChildScrollView(
                 child: Column(
-                  children: const [
+                  children: [
                     AboutMe(),
                     Education(),
                     Experience(),

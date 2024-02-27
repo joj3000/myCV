@@ -1,14 +1,14 @@
-import '../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 class Ribbon extends StatelessWidget {
   const Ribbon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
       width: AppConst.leftRibbonWidth,
       child: Column(
-        children: const [
+        children: [
           TopProfile(),
           RibbonBottomProfile(),
         ],
@@ -35,8 +35,8 @@ class RibbonBottomProfile extends StatelessWidget {
               ),
             ],
           ),
-          Column(
-            children: const [
+          const Column(
+            children: [
               Infos(),
               Skills(Txt.languages, AppConst.myLanguages, isMobile: true),
               Skills(Txt.otherSkills, AppConst.myOtherSkills,

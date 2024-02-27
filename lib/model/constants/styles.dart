@@ -55,7 +55,7 @@ class TxtStyles {
 
   /// Subtitle date
   static TextStyle subtitleDateGrey(ctx) => TextStyle(
-      fontSize: 12.5, fontWeight: FontWeight.w300, color: ext(ctx).date);
+      fontSize: 11.5, fontWeight: FontWeight.w300, color: ext(ctx).date);
 
   /// Hobby text
   static TextStyle hobbyTxt(ctx) => TextStyle(

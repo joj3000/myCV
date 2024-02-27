@@ -1,4 +1,4 @@
-import '../../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 class TitleBloc extends StatelessWidget {
   final String title;

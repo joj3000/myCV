@@ -1,4 +1,4 @@
-import '../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 class Infos extends StatelessWidget {
   const Infos({super.key});

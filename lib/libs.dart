@@ -12,6 +12,7 @@ export 'package:image_downloader_web/image_downloader_web.dart';
 export 'package:easy_localization/easy_localization.dart' hide TextDirection;
 export 'package:dropdown_button2/dropdown_button2.dart';
 export 'package:download/download.dart';
+export 'package:flutter_showcaseview/flutter_showcaseview.dart';
 
 export 'model/enums/info_type.dart';
 export 'model/constants/const.dart';

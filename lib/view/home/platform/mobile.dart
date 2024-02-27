@@ -1,13 +1,13 @@
-import '../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 class MobileVersion extends StatelessWidget {
   const MobileVersion({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
-        children: const [
+        children: [
           MobileVersionProfile(),
           MobileVersionBottomPart(),
         ],
@@ -48,9 +48,9 @@ class _MobileVersionProfileState extends ConsumerState<MobileVersionProfile> {
   }
 
   Widget skills1() {
-    return Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         Expanded(child: Infos()),
         Expanded(
           child: Skills(Txt.languages, AppConst.myLanguages, isMobile: true),
@@ -60,9 +60,9 @@ class _MobileVersionProfileState extends ConsumerState<MobileVersionProfile> {
   }
 
   Widget skills2() {
-    return Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         Expanded(
           child: Skills(
             Txt.otherSkills,
@@ -93,10 +93,10 @@ class _MobileVersionBottomPartState
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(color: ext(context).background),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(30, 50, 30, 30),
+      child: const Padding(
+        padding: EdgeInsets.fromLTRB(30, 50, 30, 30),
         child: Column(
-          children: const [
+          children: [
             AboutMe(),
             Education(),
             Experience(),

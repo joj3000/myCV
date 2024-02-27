@@ -1,4 +1,4 @@
-import '../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 class WebVersion extends StatelessWidget {
   const WebVersion({super.key});
@@ -15,8 +15,8 @@ class WebVersion extends StatelessWidget {
             child: ScrollConfiguration(
               behavior:
                   ScrollConfiguration.of(context).copyWith(scrollbars: false),
-              child: Row(
-                children: const [
+              child: const Row(
+                children: [
                   Ribbon(),
                   RightPart(),
                 ],

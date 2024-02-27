@@ -1,4 +1,4 @@
-import '../../../libs.dart';
+import 'package:my_cv/libs.dart';
 
 /// Skill + dots
 class SkillRow extends StatelessWidget {
