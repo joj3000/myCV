@@ -61,5 +61,7 @@
     "alreadyThere": "You already are on this website !",
     "githubUrl": "https://github.com/joj3000/myCV",
     "dl": "Download",
-    "errorOccured": "An error occured"
+    "errorOccured": "An error occured",
+    "okteo": "Okteo",
+    "okteoProj": "Converting to Flutter their historic application named \"LPE\" (Stack: Flutter/Dart, Bloc/Cubit, SQL (sqflite), Azure DevOps, Agile)."
 }

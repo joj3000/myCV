@@ -1,4 +1,4 @@
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 final platformSizeProvider = ChangeNotifierProvider((ref) => SizeNotifier());
 

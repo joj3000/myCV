@@ -1,4 +1,4 @@
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 class MyUrl {
   static Future<void> launchMyUrl(BuildContext context,

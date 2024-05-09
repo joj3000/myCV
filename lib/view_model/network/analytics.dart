@@ -1,4 +1,4 @@
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 /// Firebase Analytics for logging user connection and interactions
 class MyAnalytics {

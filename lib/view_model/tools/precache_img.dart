@@ -1,4 +1,4 @@
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 /// Precache images to prevent any flickering right after loading
 class PrecacheMyImg {

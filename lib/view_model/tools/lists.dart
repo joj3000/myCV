@@ -1,4 +1,4 @@
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 class LstTools {
   /// Adds a comma at the end of each string in a List<String>, except the last string

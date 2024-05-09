@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 class DL {
   /// Download the CV in pdf, from assets, to the download folder of the user.

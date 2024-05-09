@@ -1,4 +1,4 @@
-import '../../libs.dart';
+import 'package:my_cv/core/libs.dart';
 
 class MyFunctions {
   static void clickable(BuildContext context, Info info) {

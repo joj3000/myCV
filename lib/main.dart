@@ -1,9 +1,14 @@
-import 'package:my_cv/libs.dart';
+import 'package:flip_card/flip_card.dart';
+import 'package:my_cv/core/libs.dart';
+import 'package:my_cv/view/verso/verso.dart';
+
+GlobalKey<FlipCardState> flipKey = GlobalKey<FlipCardState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await EasyLocalization.ensureInitialized();
+  EasyLocalization.logger.enableBuildModes = [];
   usePathUrlStrategy();
   runApp(
     ProviderScope(
@@ -45,7 +50,12 @@ class _MyCVState extends ConsumerState<MyCV> {
       darkTheme: AppThemes.dark,
       themeMode: ThemeMode.light,
       theme: mode ? AppThemes.dark : AppThemes.light,
-      home: const Home(),
+      home: FlipCard(
+        key: flipKey,
+        flipOnTouch: false,
+        front: const Recto(),
+        back: const Verso(),
+      ),
     );
   }
 }
