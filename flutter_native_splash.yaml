@@ -1,0 +1,4 @@
+flutter_native_splash:
+  web: true
+  image_web: web/icons/Icon-512.png
+  web_image_mode: center
