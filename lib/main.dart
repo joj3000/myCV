@@ -1,4 +1,5 @@
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'package:my_cv/core/libs.dart';
 import 'package:my_cv/view/common/widgets/circular_gradient_bg.dart';
@@ -8,10 +9,11 @@ GlobalKey<FlipCardState> flipKey = GlobalKey<FlipCardState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await EasyLocalization.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   EasyLocalization.logger.enableBuildModes = [];
   setPathUrlStrategy();
+  FlutterNativeSplash.remove();
   runApp(
     ProviderScope(
       child: EasyLocalization(
