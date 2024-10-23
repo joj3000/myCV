@@ -15,7 +15,7 @@ class CircularGradientBg extends StatelessWidget {
           radius: 1,
           colors: [
             ext(context).ribbonBackground!.withOpacity(0.1),
-            ext(context).ribbonBackground!.withOpacity(0.75),
+            ext(context).ribbonBackground!.withOpacity(0.60),
           ],
         ),
       ),

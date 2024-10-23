@@ -11,6 +11,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  FlutterNativeSplash.remove();
   EasyLocalization.logger.enableBuildModes = [];
   setPathUrlStrategy();
   FlutterNativeSplash.remove();
