@@ -69,5 +69,6 @@ abstract class  LocaleKeys {
   static const mpp = 'mpp';
   static const mppProj = 'mppProj';
   static const since = 'since';
+  static const copiedToClipboard = 'copiedToClipboard';
 
 }

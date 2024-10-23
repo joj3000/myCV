@@ -1,8 +1,7 @@
 import 'package:my_cv/core/libs.dart';
 
 class AppSnacks {
-  static showSnack(BuildContext context, String txt, double width,
-      {Color? color}) {
+  static showSnack(BuildContext context, String txt, double width, {Color? color}) {
     MyAnalytics.websiteClicked();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

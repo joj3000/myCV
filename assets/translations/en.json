@@ -66,5 +66,7 @@
     "okteoProj": "Converting to Flutter their historic application named \"LPE\" (Stack: Flutter/Dart, Bloc/Cubit, SQL (sqflite), Azure DevOps, Agile).",
     "mpp": "Mon Petit Placement",
     "mppProj": "Took the complete management of their historic application. Rebranded and improved the app. Moved the app to Riverpod and go_router. Created a CI/CD pipepline with Fastlane. Developed new features in the app (Stack: Flutter/Dart, Riverpod, Firebase Notifications, Rest Api, Fastlane, Gitlab, Agile).",
-    "since": "SINCE"
+    "since": "SINCE",
+    "copiedToClipboard": "Copied to clipboard"
+
 }

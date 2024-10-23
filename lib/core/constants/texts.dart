@@ -96,6 +96,7 @@ class Txt {
   static const String githubUrl = 'githubUrl';
   static const String dl = 'dl';
   static const String title = 'Hey, I\'m Joran';
+  static const String copiedToClipboard = 'copiedToClipboard';
 
   /// ERRORS
   static const String errorOccured = 'errorOccured';
